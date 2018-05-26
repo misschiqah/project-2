@@ -1,0 +1,60 @@
+.main-color {
+    background-color: rgb(377,37,37);
+}
+header h1 {
+    color:white;
+}
+header h1 small {
+    color: grey;
+}
+.dash {
+    padding-top: 10%;
+}
+.dashb {
+background: red;
+color: white;
+font-size: 17px;
+}
+.progres {
+    padding-top:10%;
+    padding-bottom:10%;
+    background: rgba(197, 196, 196, 0.651);
+}
+.progres1 {
+    padding-bottom: 2%;
+}
+.progres2 {
+    padding-top: 5%;
+    padding-bottom: 2%;
+}
+.para {
+    font-size: 35px;
+}
+.qo {
+    background: red;
+}
+.fafa {
+    text-align: center;
+    padding-top:20%;
+    background: rgba(197, 196, 196, 0.651);
+}
+.para1 {
+    padding-right: 20%;
+    font-size: 35px;
+}
+.quickoverview {
+    margin-bottom: 3%;
+}
+.qo {
+    color: white;
+    font-size: 17px;
+}
+.latestbook {
+    background: red;
+    color: white;
+    font-size: 17px;
+}
+table{
+    font-size: 14px;
+}
+

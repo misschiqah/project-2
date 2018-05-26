@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <script src="https://cdn.ckeditor.com/ckeditor5/10.0.1/inline/ckeditor.js"></script>
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark main-color">
+        <a class="navbar-brand" href="#">My Coach2u</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Dashboard <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">My Coach</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">My Clients</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">My Gym</a>
+          </li>
+        </ul>
+      </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Hi, Nikki</a>
+            </li>
+            <li class="nav-item active dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Add Content
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item"data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap" href="#">Add Coach</a>
+                <a class="dropdown-item" href="#">Add Client</a>
+                <a class="dropdown-item" href="#">Add Gym</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+  <header class="bg-dark py-3 mb-3">
+    <div class="container">
+      <h1><i class="fas fa-cog"></i>Dashboard <small> MyCoach2U</small></h1>
+    </div>
+  </header>
+
+  <section id="main">
+    <div class="container">
+      <div class="row">
+       <div class="col-3">  <div class="card" style="width: 16rem;">
+        <div class="card-header dashb">
+          <strong>Dashboard</strong>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><i class="fas fa-user"></i>My Coach <span class="badge badge-dark badge-pill">5</span></li>
+          <li class="list-group-item"><i class="fas fa-dollar-sign"></i>My Client <span class="badge badge-dark badge-pill">32</span></li>
+          <li class="list-group-item"><i class="fas fa-home"></i>My Gym <span class="badge badge-dark badge-pill">16</span></li>
+        </ul>
+    </div>
+    <div class="dash">
+        <div class="card progres">
+          <div class="card-body">
+            <h5 class="progres1"><strong>Disk space used</strong> </h5>
+            <div class="progress">
+              <div class="progress-bar bg-dark" role="progressbar" style="width: 40%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">40%</div>
+            </div>
+            <h5 class="progres2"><strong> Memory used</strong> </h5>
+            <div class="progress">
+              <div class="progress-bar progres3 bg-dark" role="progressbar" style="width: 60%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">60%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-9"> 
+      <div class="card quickoverview">
+        <h5 class="card-header qo"><strong>Quick overview</strong></h5>
+        <div class="card-body">
+          <div class="row"> 
+            <div class="col-3">
+              <div class="card fafa">
+                <div class="card-body">
+                  <i class="fas fa-home para"></i>
+                  <h4> 100</h4>
+                  <h6>  Gyms</h6>
+                </div>
+              </div> </div>
+              <div class="col-3">
+                <div class="card fafa">
+                  <div class="card-body">
+                  <i class="fas fa-dollar-sign para"></i>
+                   <h4> 5000</h4>
+                   <h6> Revenue</h6>
+                 </div>
+               </div>
+             </div>
+             <div class="col-3">
+              <div class="card fafa">
+                <div class="card-body">
+                  <h4><i class="fas fa-user para1"></i>52</h4>
+                  <h6>  Online</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card fafa">
+                <div class="card-body">
+                  <i class="fas fa-signal para"></i>
+                  <h4>  13224</h4>
+                  <h6>  Monthly users</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+
+
+
+          <div class="card">
+  <div class="card-header latestbook">
+   <strong>Latest Booking</strong>
+  </div>
+  <div class="card-body">
+
+   <table class="table table-bordered" id="myTable">  
+    <thead>
+    <tr>
+      <th> Customer name </th>
+       <th> Coach name  </th>
+        <th> price </th>  
+      </tr> 
+    </thead>
+
+    <tbody> 
+      <tr>  
+          <td> Abby </td>
+          <td> Bobo </td>
+          <td> RM 50 </td>
+      </tr>
+
+      <tr>  
+          <td> Abby </td>
+          <td> Bobo </td>
+          <td> RM 25 </td>
+      </tr>
+
+      <tr>  
+          <td> Abby </td>
+          <td> Bobo </td>
+          <td> RM 70 </td>
+      </tr>
+
+      <tr>  
+          <td> Abby </td>
+          <td> Bobo </td>
+          <td> RM 150 </td>
+      </tr>
+
+
+    </tbody>
+   </table>
+   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel"><strong>Add New Coach</strong></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="coach-name" class="col-form-label"><strong>Coach Name</strong></label>
+                <input type="text" class="form-control" id="coach-name" placeholder="Name">
+              </div>
+              <div class="form-group">
+                  <label for="email" class="col-form-label"><strong>Coach Email</strong></label>
+                  <input type="text" class="form-control" id="coach-email" placeholder="Email">
+                </div>
+              <div class="form-group">
+                <label for="message-text" class="col-form-label"><strong>Short Description</strong></label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              </div>
+            </form>
+            <form>
+                <div class="form-group">
+                  <label for="exampleFormControlFile1"><strong>Upload Image</strong></label>
+                  <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                  <small id="emailHelp" class="form-text text-muted">Jpg or Png File only</small>
+                </div>
+              </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save Changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+</div>
+</section>
+<br>
+<footer class="text-center bg-dark text-light py-4">
+&copy; Copyright 2018 - Wansyu
+</footer>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+<script src="https://cdn.ckeditor.com/ckeditor5/10.0.1/classic/ckeditor.js"></script>
+  <script>
+    $(document).ready( function () {
+    $('#myTable').DataTable();
+
+      ClassicEditor
+          .create( document.querySelector( '#exampleformControlDesc' ) )
+          .catch( error => {
+              console.error( error );
+          } );
+        } );
+  </script>
+</body>
+
+</html>
